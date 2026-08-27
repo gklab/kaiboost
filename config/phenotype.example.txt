@@ -1,0 +1,9 @@
+# Copy to config/phenotype.txt and fill in the proband's HPO terms.
+#
+# One HPO id per line; '#' starts a comment. The real phenotype is NOT in this
+# repository: it comes from the challenge's gated clinical document, which may
+# not be redistributed under the Data Transfer Agreement.
+#
+# Example format only — these are placeholders, not the proband's terms:
+HP:0000001   # All (placeholder)
+HP:0000118   # Phenotypic abnormality (placeholder)

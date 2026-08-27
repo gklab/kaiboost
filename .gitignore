@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------------------
+# Patient data must NEVER enter this repository.
+#
+# The MVA Hackathon 2026 dataset is gated and governed by a Data Transfer
+# Agreement: redistribution is prohibited and all data (including intermediate
+# and derived datasets) must be deleted within 30 days of the hackathon close.
+# This repository therefore contains code and methods only.
+#
+# Deny by default for every data-bearing extension, then allow back the few
+# text files that are genuinely code or documentation.
+# ---------------------------------------------------------------------------
+
+# Genomic / alignment data
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bcf
+*.bam
+*.cram
+*.sam
+*.bai
+*.crai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fa
+*.fa.gz
+*.fasta
+*.fai
+*.mmi
+*.gtf
+*.gtf.gz
+*.bed
+
+# Tabular / serialised results (may carry proband genotypes)
+*.tsv
+*.csv
+*.json
+*.jsonl
+*.xlsx
+*.h5
+*.parquet
+
+# Clinical documents
+*.docx
+*.pdf
+
+# Proband phenotype (from the gated clinical document)
+config/phenotype.txt
+
+# Working directories from the analysis
+cache/
+results/
+fastq_pass/
+control_pass/
+validation/work/
+mva-data/
+exomiser/
+
+# Environment
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+
+# Allow back: documentation and the config template only
+!README.md
+!report/*.md
+!config/phenotype.example.txt
